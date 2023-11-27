@@ -1,0 +1,10 @@
+-creo proyecto desde gitbash.
+-creo venv.
+-ejecuto en consola: pip install django.
+-ejecuto en consola:python manage.py migrate. para crear base de datos.
+-ejecuto en consola:python manage.py runserver.para correr el servidor.
+-automatizo el archivo de manage.py para que se ejecute como runserver.
+-creo carpeta templates.
+-creo archivo index.html en templates.
+-creo archivo git ignore
+-creo repositorio en github
