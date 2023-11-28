@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block cambio %}
+<div>
+    <form action="/app/encontrar" method="GET">
+        {{ form.as_p }}
+        <input type="submit" value="Buscar">
+    </form>
+
+    {% for pelicula in peliculas %}
+    <h6>pelicula : {{pelicula.nombre}} --  año:  {{pelicula.anio}}</h6>
+    <hr>
+    {% endfor %}
+{% endblock %}

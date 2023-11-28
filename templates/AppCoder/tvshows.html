@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block cambio %}
+<div>
+    <form action="/app/encontrarTvshow" method="GET">
+        {{ form.as_p }}
+        <input type="submit" value="Buscar">
+    </form>
+
+    {% for Tvshow in Tvshows %}
+    <h6>Tvshow : {{Tvshow.nombre}} --  pais de origen:  {{Tvshow.pais_de_origen}}</h6>
+    <hr>
+    {% endfor %}
+{% endblock %}

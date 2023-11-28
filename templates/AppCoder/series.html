@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block cambio %}
+<div>
+    <form action="/app/encontrarSerie" method="GET">
+        {{ form.as_p }}
+        <input type="submit" value="Buscar">
+    </form>
+
+    {% for serie in series %}
+    <h6>serie : {{serie.nombre}} --  cantidad de capitulos:  {{serie.cantidad_de_capitulos}}</h6>
+    <hr>
+    {% endfor %}
+{% endblock %}
